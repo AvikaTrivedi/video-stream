@@ -52,9 +52,7 @@ async def _human_time_duration(seconds):
     command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
 async def start_(client: Client, message: Message):
-    await message.reply_text(
-        f""" video player is alive 🤖
-    )
+    await message.reply_text(f""" video player is alive 🤖""")
 
 
 @Client.on_message(
