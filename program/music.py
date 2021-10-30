@@ -49,7 +49,7 @@ async def ytdl(link):
       return 0, stderr.decode()
 
 
-@Client.on_message(command(["play", f"play@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["ytplay", f"ytplay@{BOT_USERNAME}"]) & other_filters)
 async def play(client, m: Message):
    
    keyboard = InlineKeyboardMarkup(
@@ -189,7 +189,7 @@ async def play(client, m: Message):
 
 # stream is used for live streaming only
 
-@Client.on_message(command(["stream", f"stream@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["ytstream", f"ytstream@{BOT_USERNAME}"]) & other_filters)
 async def stream(client, m: Message):
    
    keyboard = InlineKeyboardMarkup(
